@@ -1,0 +1,243 @@
+@import "tailwindcss";
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/400-italic.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/700.css";
+@import "@fontsource/jost/300.css";
+@import "@fontsource/jost/400.css";
+@import "@fontsource/jost/500.css";
+@import "@fontsource/bodoni-moda/400.css";
+@import "@fontsource/bodoni-moda/500.css";
+@import "@fontsource/bodoni-moda/600.css";
+@import "@fontsource/bodoni-moda/700.css";
+@import "@fontsource/caveat/400.css";
+@import "@fontsource/caveat/500.css";
+
+@theme {
+  --font-display: "Cormorant Garamond", "Georgia", serif;
+  --font-body: "Jost", "Helvetica Neue", sans-serif;
+  --font-accent: "Caveat", cursive;
+  --font-editorial: "Bodoni Moda", "Georgia", serif;
+
+  --color-burgundy: #7B1F2B;
+  --color-brown: #5C3A21;
+  --color-orange: #E07A2C;
+  --color-orange-dark: #c96820;
+  --color-purple: #5B2A86;
+  --color-cream: #FDF8F4;
+  --color-dark: #0d0906;
+  --color-dark-alt: #0a0705;
+}
+
+html {
+  scroll-behavior: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-dark);
+  color: white;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(224, 122, 44, 0.3);
+  color: white;
+}
+
+/* Grain texture */
+.hero-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* Cursor */
+#cursor, #cursor-dot {
+  transition: none;
+  will-change: transform;
+}
+
+#cursor.hovering {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(224, 122, 44, 0.8);
+  transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              height 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s ease;
+}
+
+/* Loader */
+#loader .loader-line {
+  animation: loader-expand 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes loader-expand {
+  0% { width: 0; }
+  100% { width: 200px; }
+}
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Navbar */
+#navbar.scrolled {
+  background: rgba(13, 9, 6, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  py: 3;
+}
+
+/* Scroll line */
+.scroll-line {
+  animation: scroll-pulse 2s ease-in-out infinite;
+}
+
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.5; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+/* Mobile menu */
+#mobile-menu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu-line {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.3s ease,
+              width 0.3s ease;
+}
+
+#menu-toggle.active .menu-line:first-child {
+  transform: rotate(45deg) translateY(4px);
+}
+
+#menu-toggle.active .menu-line:last-child {
+  transform: rotate(-45deg) translateY(-3px);
+  width: 28px;
+}
+
+/* Product card hover lift */
+.product-card {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.5s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Three.js canvas */
+#hero-canvas {
+  opacity: 0.6;
+}
+
+/* Smooth reveal animation classes */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal-up.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Social card shimmer */
+.social-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 40%, rgba(224, 122, 44, 0.03) 50%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.social-card:hover::before {
+  opacity: 1;
+}
+
+/* WhatsApp float pulse */
+#whatsapp-float {
+  animation: wa-pulse 3s ease-in-out infinite;
+}
+
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.2); }
+  50% { box-shadow: 0 4px 40px rgba(37, 211, 102, 0.4); }
+}
+
+/* Value items stagger */
+.value-item {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Ingredient items */
+.ingredient-item {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+/* Image parallax wrapper */
+.about-image-wrapper img {
+  transition: transform 0.1s linear;
+}
+
+/* Focus visible for a11y */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: clamp(2.4rem, 10vw, 4rem);
+  }
+}

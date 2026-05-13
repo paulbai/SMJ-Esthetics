@@ -142,10 +142,18 @@ body {
   width: 28px;
 }
 
+/* Category filter active */
+.filter-btn.active {
+  border-color: rgba(224, 122, 44, 0.5);
+  background: rgba(224, 122, 44, 0.1);
+  color: #E07A2C;
+}
+
 /* Product card hover lift */
 .product-card {
   transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-              border-color 0.5s ease;
+              border-color 0.5s ease,
+              opacity 0.3s ease;
 }
 
 .product-card:hover {

@@ -381,11 +381,18 @@ function initSmoothAnchors() {
 function initScrollAnimations() {
   const revealEls = document.querySelectorAll(
     '.about-label, .about-title, .about-text, .about-stat, .about-image-wrapper, ' +
-    '.products-label, .products-title, .product-card, ' +
+    '.products-label, .products-title, ' +
     '.ingredient-img, .ingredient-item, .value-item, .social-card'
   ) as NodeListOf<HTMLElement>
 
+  const productCards = document.querySelectorAll('.product-card') as NodeListOf<HTMLElement>
+
   revealEls.forEach(el => {
+    el.style.opacity = '0'
+    el.style.transform = 'translateY(30px)'
+  })
+
+  productCards.forEach(el => {
     el.style.opacity = '0'
     el.style.transform = 'translateY(30px)'
   })
@@ -406,7 +413,6 @@ function initScrollAnimations() {
       }, delay)
       observer.unobserve(el)
 
-      // Trigger counter animation for stat elements
       if (el.classList.contains('about-stat')) {
         setTimeout(animateCounters, delay + 400)
       }
@@ -415,6 +421,24 @@ function initScrollAnimations() {
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' })
 
   revealEls.forEach(el => observer.observe(el))
+
+  const productObserver = new IntersectionObserver((entries) => {
+    let batch = 0
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return
+      const el = entry.target as HTMLElement
+      const delay = batch * 50
+      batch++
+      setTimeout(() => {
+        el.style.transition = `opacity 0.5s ${ease}, transform 0.5s ${ease}`
+        el.style.opacity = '1'
+        el.style.transform = 'translateY(0)'
+      }, delay)
+      productObserver.unobserve(el)
+    })
+  }, { threshold: 0.01, rootMargin: '0px 0px 100px 0px' })
+
+  productCards.forEach(el => productObserver.observe(el))
 
   // About image parallax (GSAP scrub works fine)
   gsap.to('.about-image-wrapper img', {
@@ -619,11 +643,71 @@ function initCart() {
 
   if (checkoutBtn) {
     checkoutBtn.addEventListener('click', () => {
-      // Checkout link will be wired up later
+      const modal = document.getElementById('checkout-modal')!
+      const iframe = document.getElementById('checkout-iframe') as HTMLIFrameElement
+      iframe.src = 'https://pay.flotme.ai/'
+      closeCart()
+      modal.style.opacity = '1'
+      modal.style.pointerEvents = 'all'
+      document.body.style.overflow = 'hidden'
     })
   }
 
   renderCart()
+}
+
+// ─── Checkout Modal ───
+function initCheckoutModal() {
+  const modal = document.getElementById('checkout-modal')
+  const closeBtn = document.getElementById('checkout-modal-close')
+  const overlay = document.getElementById('checkout-modal-overlay')
+  const iframe = document.getElementById('checkout-iframe') as HTMLIFrameElement | null
+
+  if (!modal || !closeBtn || !overlay || !iframe) return
+
+  function closeModal() {
+    modal!.style.opacity = '0'
+    modal!.style.pointerEvents = 'none'
+    document.body.style.overflow = ''
+    setTimeout(() => { iframe!.src = '' }, 300)
+  }
+
+  closeBtn.addEventListener('click', closeModal)
+  overlay.addEventListener('click', closeModal)
+}
+
+// ─── Category Filters ───
+function initCategoryFilters() {
+  const filterBtns = document.querySelectorAll<HTMLElement>('.filter-btn')
+  const cards = document.querySelectorAll<HTMLElement>('#product-grid .product-card')
+
+  if (!filterBtns.length || !cards.length) return
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'))
+      btn.classList.add('active')
+
+      const filter = btn.dataset.filter!
+
+      cards.forEach(card => {
+        const category = card.dataset.category!
+        const show = filter === 'all' || category === filter
+
+        if (show) {
+          card.style.display = ''
+          requestAnimationFrame(() => {
+            card.style.opacity = '1'
+            card.style.transform = 'translateY(0)'
+          })
+        } else {
+          card.style.opacity = '0'
+          card.style.transform = 'translateY(20px)'
+          setTimeout(() => { card.style.display = 'none' }, 300)
+        }
+      })
+    })
+  })
 }
 
 // ─── WhatsApp Float Appear ───
@@ -651,6 +735,8 @@ async function init() {
   initParallaxCards()
   initWhatsAppFloat()
   initCart()
+  initCheckoutModal()
+  initCategoryFilters()
 }
 
 if (document.readyState === 'loading') {

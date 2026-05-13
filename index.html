@@ -217,163 +217,417 @@
         </div>
       </section>
 
-      <!-- Products Section -->
+      <!-- Marketplace Section -->
       <section id="products" class="relative py-36 md:py-48 bg-[#0a0705] overflow-hidden">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#5B2A86]/[0.02] rounded-full blur-[200px] pointer-events-none"></div>
 
-        <div class="max-w-[1200px] mx-auto px-8 md:px-16 lg:px-20">
-          <div class="text-center mb-20">
-            <p class="products-label font-body text-[#E07A2C] text-xs tracking-[0.4em] uppercase mb-8">Our Collections</p>
+        <div class="max-w-[1200px] mx-auto px-6 md:px-16 lg:px-20">
+          <div class="text-center mb-16">
+            <p class="products-label font-body text-[#E07A2C] text-xs tracking-[0.4em] uppercase mb-8">Our Marketplace</p>
             <h2 class="products-title font-display text-[clamp(2.2rem,5vw,4rem)] leading-[1.05] tracking-[-0.02em] text-white">
-              Skincare & Gifts,<br/><span class="italic text-[#E07A2C]">The Natural Way</span>
+              Browse, Select &<br/><span class="italic text-[#E07A2C]">Shop With Ease</span>
             </h2>
           </div>
 
-          <!-- Skincare Products -->
-          <div class="mb-28">
-            <h3 class="font-display text-2xl text-white/80 mb-12 flex items-center gap-4">
-              <span class="w-8 h-[1px] bg-[#E07A2C]"></span>
-              Skincare
-            </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-product="soap" data-name="Handmade Soap" data-price="25000" data-img="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?w=600&q=80">
-                <div class="relative aspect-square overflow-hidden">
-                  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
-                  <img src="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?w=600&q=80" alt="Natural handmade soap" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
-                  <div class="absolute top-4 left-4 z-20">
-                    <span class="font-body text-[10px] text-[#E07A2C] tracking-[0.3em] uppercase bg-[#0d0906]/80 px-3 py-1.5 backdrop-blur-sm">Natural</span>
-                  </div>
-                </div>
-                <div class="p-6 pb-5">
-                  <div class="flex items-start justify-between gap-3 mb-2">
-                    <h4 class="font-display text-xl text-white">Handmade Soap</h4>
-                    <span class="font-body text-[#E07A2C] text-sm whitespace-nowrap">Le 25,000</span>
-                  </div>
-                  <p class="font-body text-white/40 text-sm leading-[1.7] mb-5">Pure, natural bar soap crafted with local ingredients and essential oils.</p>
-                  <button class="add-to-cart-btn w-full font-body text-xs text-[#E07A2C] border border-[#E07A2C]/30 px-4 py-3 tracking-[0.15em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-product="oils" data-name="Body &amp; Hair Oils" data-price="35000" data-img="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&q=80">
-                <div class="relative aspect-square overflow-hidden">
-                  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
-                  <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&q=80" alt="Natural body oils" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
-                  <div class="absolute top-4 left-4 z-20">
-                    <span class="font-body text-[10px] text-[#E07A2C] tracking-[0.3em] uppercase bg-[#0d0906]/80 px-3 py-1.5 backdrop-blur-sm">Bestseller</span>
-                  </div>
-                </div>
-                <div class="p-6 pb-5">
-                  <div class="flex items-start justify-between gap-3 mb-2">
-                    <h4 class="font-display text-xl text-white">Body & Hair Oils</h4>
-                    <span class="font-body text-[#E07A2C] text-sm whitespace-nowrap">Le 35,000</span>
-                  </div>
-                  <p class="font-body text-white/40 text-sm leading-[1.7] mb-5">Nourishing natural oils for deep hydration — body, hair, and beard care.</p>
-                  <button class="add-to-cart-btn w-full font-body text-xs text-[#E07A2C] border border-[#E07A2C]/30 px-4 py-3 tracking-[0.15em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
-
-              <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-product="shea" data-name="Shea Butter &amp; Body Scrub" data-price="30000" data-img="https://images.unsplash.com/photo-1595348020949-87cdfbb44174?w=600&q=80">
-                <div class="relative aspect-square overflow-hidden">
-                  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
-                  <img src="https://images.unsplash.com/photo-1595348020949-87cdfbb44174?w=600&q=80" alt="Shea butter" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
-                  <div class="absolute top-4 left-4 z-20">
-                    <span class="font-body text-[10px] text-[#E07A2C] tracking-[0.3em] uppercase bg-[#0d0906]/80 px-3 py-1.5 backdrop-blur-sm">Pure</span>
-                  </div>
-                </div>
-                <div class="p-6 pb-5">
-                  <div class="flex items-start justify-between gap-3 mb-2">
-                    <h4 class="font-display text-xl text-white">Shea Butter & Body Scrub</h4>
-                    <span class="font-body text-[#E07A2C] text-sm whitespace-nowrap">Le 30,000</span>
-                  </div>
-                  <p class="font-body text-white/40 text-sm leading-[1.7] mb-5">Raw whipped shea butter and exfoliating scrubs for radiant, healthy skin.</p>
-                  <button class="add-to-cart-btn w-full font-body text-xs text-[#E07A2C] border border-[#E07A2C]/30 px-4 py-3 tracking-[0.15em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
-            </div>
+          <!-- Category Filters -->
+          <div class="flex flex-wrap justify-center gap-3 mb-16" id="category-filters">
+            <button class="filter-btn active font-body text-xs tracking-[0.15em] uppercase px-5 py-2.5 border border-white/10 bg-white/5 text-white/80 hover:border-[#E07A2C]/40 hover:text-[#E07A2C] transition-all duration-300 cursor-pointer" data-filter="all">All</button>
+            <button class="filter-btn font-body text-xs tracking-[0.15em] uppercase px-5 py-2.5 border border-white/10 bg-transparent text-white/40 hover:border-[#E07A2C]/40 hover:text-[#E07A2C] transition-all duration-300 cursor-pointer" data-filter="skincare">Skincare</button>
+            <button class="filter-btn font-body text-xs tracking-[0.15em] uppercase px-5 py-2.5 border border-white/10 bg-transparent text-white/40 hover:border-[#E07A2C]/40 hover:text-[#E07A2C] transition-all duration-300 cursor-pointer" data-filter="earrings">Earrings</button>
+            <button class="filter-btn font-body text-xs tracking-[0.15em] uppercase px-5 py-2.5 border border-white/10 bg-transparent text-white/40 hover:border-[#E07A2C]/40 hover:text-[#E07A2C] transition-all duration-300 cursor-pointer" data-filter="ankara">Ankara Bags</button>
           </div>
 
-          <!-- Gifts & Craft -->
-          <div>
-            <h3 class="font-display text-2xl text-white/80 mb-12 flex items-center gap-4">
-              <span class="w-8 h-[1px] bg-[#5B2A86]"></span>
-              Gifts & Craft
-            </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-product="hampers" data-name="Curated Hampers" data-price="75000" data-img="https://images.unsplash.com/photo-1549465220-1a8b9238f964?w=600&q=80">
-                <div class="relative aspect-square overflow-hidden">
-                  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
-                  <img src="https://images.unsplash.com/photo-1549465220-1a8b9238f964?w=600&q=80" alt="Curated gift hampers" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
-                  <div class="absolute top-4 left-4 z-20">
-                    <span class="font-body text-[10px] text-[#5B2A86] tracking-[0.3em] uppercase bg-[#0d0906]/80 px-3 py-1.5 backdrop-blur-sm">Popular</span>
-                  </div>
-                </div>
-                <div class="p-6 pb-5">
-                  <div class="flex items-start justify-between gap-3 mb-2">
-                    <h4 class="font-display text-xl text-white">Curated Hampers</h4>
-                    <span class="font-body text-[#5B2A86] text-sm whitespace-nowrap">Le 75,000</span>
-                  </div>
-                  <p class="font-body text-white/40 text-sm leading-[1.7] mb-5">Beautifully packaged gift hampers combining skincare, treats, and handmade items.</p>
-                  <button class="add-to-cart-btn w-full font-body text-xs text-[#5B2A86] border border-[#5B2A86]/30 px-4 py-3 tracking-[0.15em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer flex items-center justify-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
+          <!-- Product Grid -->
+          <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
 
-              <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-product="ankara" data-name="Ankara Gift Bags" data-price="20000" data-img="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&q=80">
-                <div class="relative aspect-square overflow-hidden">
-                  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
-                  <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&q=80" alt="Ankara gift bags" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
-                  <div class="absolute top-4 left-4 z-20">
-                    <span class="font-body text-[10px] text-[#5B2A86] tracking-[0.3em] uppercase bg-[#0d0906]/80 px-3 py-1.5 backdrop-blur-sm">Handmade</span>
-                  </div>
-                </div>
-                <div class="p-6 pb-5">
-                  <div class="flex items-start justify-between gap-3 mb-2">
-                    <h4 class="font-display text-xl text-white">Ankara Gift Bags</h4>
-                    <span class="font-body text-[#5B2A86] text-sm whitespace-nowrap">Le 20,000</span>
-                  </div>
-                  <p class="font-body text-white/40 text-sm leading-[1.7] mb-5">Sustainable gift bags crafted from vibrant African Ankara print fabric.</p>
-                  <button class="add-to-cart-btn w-full font-body text-xs text-[#5B2A86] border border-[#5B2A86]/30 px-4 py-3 tracking-[0.15em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer flex items-center justify-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
-                    Add to Cart
-                  </button>
-                </div>
+            <!-- SKINCARE -->
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="skincare" data-product="soap-anti-blemish" data-name="Anti Blemish Soap" data-price="25000" data-img="/products/soap-anti-blemish.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/soap-anti-blemish.jpg" alt="POSH Anti Blemish Soap — Raspberry & Carrot" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+                <div class="absolute top-3 left-3 z-20"><span class="font-body text-[10px] text-[#E07A2C] tracking-[0.2em] uppercase bg-[#0d0906]/80 px-2.5 py-1 backdrop-blur-sm">Natural</span></div>
               </div>
-
-              <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-product="accessories" data-name="Handmade Accessories" data-price="15000" data-img="https://images.unsplash.com/photo-1515562141589-67f0d569b6fc?w=600&q=80">
-                <div class="relative aspect-square overflow-hidden">
-                  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
-                  <img src="https://images.unsplash.com/photo-1515562141589-67f0d569b6fc?w=600&q=80" alt="Handmade accessories" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
-                  <div class="absolute top-4 left-4 z-20">
-                    <span class="font-body text-[10px] text-[#5B2A86] tracking-[0.3em] uppercase bg-[#0d0906]/80 px-3 py-1.5 backdrop-blur-sm">Artisan</span>
-                  </div>
-                </div>
-                <div class="p-6 pb-5">
-                  <div class="flex items-start justify-between gap-3 mb-2">
-                    <h4 class="font-display text-xl text-white">Handmade Accessories</h4>
-                    <span class="font-body text-[#5B2A86] text-sm whitespace-nowrap">Le 15,000</span>
-                  </div>
-                  <p class="font-body text-white/40 text-sm leading-[1.7] mb-5">Earrings, necklaces, and keyholders — each piece uniquely crafted by hand.</p>
-                  <button class="add-to-cart-btn w-full font-body text-xs text-[#5B2A86] border border-[#5B2A86]/30 px-4 py-3 tracking-[0.15em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer flex items-center justify-center gap-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
-                    Add to Cart
-                  </button>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Anti Blemish Soap</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Raspberry & carrot bar soap for clearer, radiant skin.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 25,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
                 </div>
               </div>
             </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="skincare" data-product="soap-soothing" data-name="Soothing Lavender Soap" data-price="25000" data-img="/products/soap-soothing-lavender.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/soap-soothing-lavender.jpg" alt="POSH Soothing Lavender & Aloe Vera Soap" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+                <div class="absolute top-3 left-3 z-20"><span class="font-body text-[10px] text-[#E07A2C] tracking-[0.2em] uppercase bg-[#0d0906]/80 px-2.5 py-1 backdrop-blur-sm">Soothing</span></div>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Soothing Lavender Soap</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Lavender & aloe vera bar soap for calm, nourished skin.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 25,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="skincare" data-product="beard-booster" data-name="POSH Beard Booster" data-price="35000" data-img="/products/beard-booster-single.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/beard-booster-single.jpg" alt="POSH Supersonic Beard Booster by SMJ Esthetics" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+                <div class="absolute top-3 left-3 z-20"><span class="font-body text-[10px] text-[#E07A2C] tracking-[0.2em] uppercase bg-[#0d0906]/80 px-2.5 py-1 backdrop-blur-sm">Bestseller</span></div>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">POSH Beard Booster</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Supersonic beard growth booster spray — 120ml.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 35,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="skincare" data-product="beard-booster-set" data-name="Beard Booster 3-Pack" data-price="90000" data-img="/products/beard-booster-trio.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/beard-booster-trio.jpg" alt="POSH Beard Booster 3-Pack" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+                <div class="absolute top-3 left-3 z-20"><span class="font-body text-[10px] text-[#E07A2C] tracking-[0.2em] uppercase bg-[#0d0906]/80 px-2.5 py-1 backdrop-blur-sm">Value</span></div>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Beard Booster 3-Pack</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Three bottles of POSH Supersonic Beard Booster.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 90,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="skincare" data-product="neroli-body-oil" data-name="Neroli Body Oil" data-price="35000" data-img="/products/body-oil-neroli.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/body-oil-neroli.jpg" alt="POSH Neroli Body Oil — 100% Organic" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+                <div class="absolute top-3 left-3 z-20"><span class="font-body text-[10px] text-[#E07A2C] tracking-[0.2em] uppercase bg-[#0d0906]/80 px-2.5 py-1 backdrop-blur-sm">Organic</span></div>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Neroli Body Oil</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">100% organic neroli body oil — deep nourishment.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 35,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- EARRINGS -->
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-red-crystal" data-name="Red Crystal Hoops" data-price="15000" data-img="/products/earrings-red-crystal.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-red-crystal.jpg" alt="Red Crystal Hoop Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+                <div class="absolute top-3 left-3 z-20"><span class="font-body text-[10px] text-[#5B2A86] tracking-[0.2em] uppercase bg-[#0d0906]/80 px-2.5 py-1 backdrop-blur-sm">Handmade</span></div>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Red Crystal Hoops</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Sparkling red crystal crescent hoop earrings.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 15,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-amber-teardrop" data-name="Amber Teardrop Earrings" data-price="18000" data-img="/products/earrings-amber-teardrop.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-amber-teardrop.jpg" alt="Amber Teardrop Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Amber Teardrop Earrings</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Amber glass with gold-studded teardrop dangles.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 18,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-crystal-rect" data-name="Crystal Rectangle Drops" data-price="15000" data-img="/products/earrings-crystal-rectangle.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-crystal-rectangle.jpg" alt="Crystal Rectangle Drop Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Crystal Rectangle Drops</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Iridescent crystal and bead rectangle drop earrings.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 15,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-peach" data-name="Peach Chandelier Earrings" data-price="18000" data-img="/products/earrings-peach-chandelier.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-peach-chandelier.jpg" alt="Peach Crystal Chandelier Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Peach Chandelier Earrings</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Peach crystal beads with silver accent drops.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 18,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-black" data-name="Black Beaded Loops" data-price="15000" data-img="/products/earrings-black-beaded.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-black-beaded.jpg" alt="Black Beaded Loop Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Black Beaded Loops</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Faceted black bead teardrop loops with crystal accent.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 15,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-marble" data-name="Marble Drop Earrings" data-price="12000" data-img="/products/earrings-marble-drop.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-marble-drop.jpg" alt="Marble Drop Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Marble Drop Earrings</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Delicate marble and peach bead drop earrings.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 12,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-blue-gem" data-name="Blue Gem Cluster" data-price="18000" data-img="/products/earrings-blue-gem.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-blue-gem.jpg" alt="Blue Gem Cluster Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Blue Gem Cluster</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Vivid blue gem teardrop cluster statement earrings.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 18,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-shell" data-name="Shell Cascade Earrings" data-price="15000" data-img="/products/earrings-shell-cascade.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-shell-cascade.jpg" alt="Shell Cascade Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Shell Cascade Earrings</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Natural shell and stone cascade dangle earrings.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 15,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-stone" data-name="Stone Cluster Dangles" data-price="15000" data-img="/products/earrings-stone-cluster.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-stone-cluster.jpg" alt="Stone Cluster Dangle Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Stone Cluster Dangles</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Multi-stone and gold bead cluster dangle earrings.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 15,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-red-beaded" data-name="Red Beaded Loops" data-price="12000" data-img="/products/earrings-red-beaded.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-red-beaded.jpg" alt="Red Beaded Loop Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Red Beaded Loops</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Crimson red bead loops with gold accent.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 12,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#5B2A86]/20 transition-all duration-500 cursor-pointer" data-category="earrings" data-product="earrings-seed" data-name="Seed &amp; Stone Drops" data-price="15000" data-img="/products/earrings-seed-stone.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/earrings-seed-stone.jpg" alt="Seed & Stone Drop Earrings" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Seed & Stone Drops</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Natural seed, quartz, and red bead dangle earrings.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#5B2A86] text-sm">Le 15,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#5B2A86] border border-[#5B2A86]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#5B2A86] hover:text-white transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANKARA BAGS & CARDS -->
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="ankara" data-product="ankara-bird" data-name="Ankara Bird Gift Bag" data-price="20000" data-img="/products/ankara-bag-bird.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/ankara-bag-bird.jpg" alt="Ankara Bird Print Gift Bag" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+                <div class="absolute top-3 left-3 z-20"><span class="font-body text-[10px] text-[#E07A2C] tracking-[0.2em] uppercase bg-[#0d0906]/80 px-2.5 py-1 backdrop-blur-sm">Handmade</span></div>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Ankara Bird Gift Bag</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Vibrant bird-print Ankara fabric gift bag.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 20,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="ankara" data-product="ankara-geometric" data-name="Ankara Geometric Bag" data-price="20000" data-img="/products/ankara-bag-geometric.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/ankara-bag-geometric.jpg" alt="Ankara Geometric Pattern Bag" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Ankara Geometric Bag</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Blue geometric Ankara print gift bag.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 20,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="ankara" data-product="ankara-gold" data-name="Ankara Gold &amp; Red Bag" data-price="20000" data-img="/products/ankara-bag-gold-red.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/ankara-bag-gold-red.jpg" alt="Ankara Gold & Red Pattern Bag" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Ankara Gold & Red Bag</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Gold and red ornate Ankara print gift bag.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 20,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="ankara" data-product="ankara-butterfly" data-name="Ankara Butterfly Bag" data-price="20000" data-img="/products/ankara-bag-butterfly.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/ankara-bag-butterfly.jpg" alt="Ankara Butterfly Print Bag" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Ankara Butterfly Bag</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Pink butterfly Ankara print gift bag.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 20,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="ankara" data-product="ankara-abstract" data-name="Ankara Abstract Bag" data-price="20000" data-img="/products/ankara-bag-abstract.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/ankara-bag-abstract.jpg" alt="Ankara Abstract Pattern Bag" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Ankara Abstract Bag</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Dark abstract splash-art Ankara gift bag.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 20,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="ankara" data-product="ankara-purple" data-name="Ankara Purple Bow Bag" data-price="22000" data-img="/products/ankara-bag-purple-bow.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/ankara-bag-purple-bow.jpg" alt="Ankara Purple Bow Gift Bag" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Ankara Purple Bow Bag</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Purple floral Ankara bag with pink satin bow.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 22,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="ankara" data-product="ankara-tribal" data-name="Ankara Tribal Bow Bag" data-price="22000" data-img="/products/ankara-bag-tribal-bow.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/ankara-bag-tribal-bow.jpg" alt="Ankara Tribal Pattern Bow Gift Bag" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Ankara Tribal Bow Bag</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Tribal orange & red Ankara bag with red bow.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 22,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card group relative overflow-hidden bg-white/[0.02] border border-white/5 hover:border-[#E07A2C]/20 transition-all duration-500 cursor-pointer" data-category="ankara" data-product="ankara-cards" data-name="Ankara Cards Set" data-price="15000" data-img="/products/ankara-cards-set.jpg">
+              <div class="relative aspect-square overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d0906] via-[#0d0906]/20 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <img src="/products/ankara-cards-set.jpg" alt="Ankara Greeting Cards Set" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+                <div class="absolute top-3 left-3 z-20"><span class="font-body text-[10px] text-[#E07A2C] tracking-[0.2em] uppercase bg-[#0d0906]/80 px-2.5 py-1 backdrop-blur-sm">Popular</span></div>
+              </div>
+              <div class="p-4 md:p-5">
+                <h4 class="font-display text-base md:text-lg text-white mb-1 leading-tight">Ankara Cards Set</h4>
+                <p class="font-body text-white/30 text-xs leading-relaxed mb-3 hidden md:block">Handmade Ankara greeting cards — assorted designs.</p>
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-body text-[#E07A2C] text-sm">Le 15,000</span>
+                  <button class="add-to-cart-btn font-body text-[10px] text-[#E07A2C] border border-[#E07A2C]/30 px-3 py-2 tracking-[0.1em] uppercase hover:bg-[#E07A2C] hover:text-[#0d0906] transition-all duration-300 cursor-pointer">Add</button>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
+
+      <!-- Checkout Popup -->
+      <div id="checkout-modal" class="fixed inset-0 z-[200] flex items-center justify-center p-4" style="opacity:0;pointer-events:none">
+        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" id="checkout-modal-overlay"></div>
+        <div class="relative w-full max-w-[500px] h-[85vh] max-h-[700px] bg-[#111] border border-white/10 rounded-lg overflow-hidden shadow-2xl">
+          <div class="flex items-center justify-between px-6 py-4 border-b border-white/5">
+            <h3 class="font-display text-lg text-white">Checkout</h3>
+            <button id="checkout-modal-close" class="text-white/40 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-1">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <iframe id="checkout-iframe" src="" class="w-full h-[calc(100%-56px)] border-none bg-white"></iframe>
+        </div>
+      </div>
 
       <!-- Ingredients Section -->
       <section id="ingredients" class="relative py-36 md:py-48 bg-[#0d0906] overflow-hidden">

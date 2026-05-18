@@ -54,8 +54,8 @@
     </nav>
 
     <!-- Cart Drawer -->
-    <div id="cart-overlay" class="fixed inset-0 z-[101] bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
-    <aside id="cart-drawer" class="fixed top-0 right-0 z-[102] w-full max-w-[420px] h-full bg-[#111] border-l border-white/5 translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col">
+    <div id="cart-overlay" class="fixed inset-0 z-[101] bg-black/60 backdrop-blur-sm" style="opacity:0;pointer-events:none;transition:opacity 0.3s ease"></div>
+    <aside id="cart-drawer" class="fixed top-0 right-0 z-[102] w-full max-w-[420px] h-full bg-[#111] border-l border-white/5 flex flex-col" style="transform:translateX(100%);transition:transform 0.5s cubic-bezier(0.22,1,0.36,1)">
       <div class="flex items-center justify-between px-8 py-6 border-b border-white/5">
         <h3 class="font-display text-xl text-white">Your Cart</h3>
         <button id="cart-close" class="cursor-pointer bg-transparent border-none text-white/50 hover:text-white transition-colors duration-200 p-1" aria-label="Close cart">
